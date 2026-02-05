@@ -39,6 +39,7 @@ const Navbar = () => {
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex items-center space-x-8">
+                        <Link to="/" className="text-gray-700 hover:text-primary font-medium transition-colors">Inicio</Link>
                         <Link to="/empleos" className="text-gray-700 hover:text-primary font-medium transition-colors">Busco Trabajo</Link>
                         <Link to="/empresas" className="text-gray-700 hover:text-primary font-medium transition-colors">Empresas</Link>
                         <Link to="/capacitacion" className="text-gray-700 hover:text-primary font-medium transition-colors flex items-center gap-1">
@@ -89,6 +90,7 @@ const Navbar = () => {
             {isOpen && (
                 <div className="md:hidden bg-white border-t border-gray-100 animate-in slide-in-from-top duration-300">
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                        <Link to="/" className="block px-3 py-2 text-gray-700 hover:bg-primary/5 hover:text-primary rounded-md">Inicio</Link>
                         <Link to="/empleos" className="block px-3 py-2 text-gray-700 hover:bg-primary/5 hover:text-primary rounded-md">Busco Trabajo</Link>
                         <Link to="/empresas" className="block px-3 py-2 text-gray-700 hover:bg-primary/5 hover:text-primary rounded-md">Empresas</Link>
                         <Link to="/capacitacion" className="block px-3 py-2 text-gray-700 hover:bg-primary/5 hover:text-primary rounded-md">Capacitación</Link>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CourseSection from './components/CourseSection';
@@ -28,34 +28,34 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <a href={`${basePath}/empleos`} className="block text-center p-8 rounded-3xl bg-indigo-50 hover:bg-indigo-100 transition-all cursor-pointer group hover:-translate-y-1">
+            <Link to="/empleos" className="block text-center p-8 rounded-3xl bg-indigo-50 hover:bg-indigo-100 transition-all cursor-pointer group hover:-translate-y-1">
               <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:shadow-md transition-all">
                 <Briefcase className="text-primary group-hover:scale-110 transition-transform" size={32} />
               </div>
               <h3 className="font-bold text-gray-900 text-lg">Soy Vecino</h3>
               <p className="text-sm text-gray-500 mt-2 font-medium">Busco empleo y capacitación</p>
-            </a>
-            <a href={`${basePath}/empresas`} className="block text-center p-8 rounded-3xl bg-sky-50 hover:bg-sky-100 transition-all cursor-pointer group hover:-translate-y-1">
+            </Link>
+            <Link to="/empresas" className="block text-center p-8 rounded-3xl bg-sky-50 hover:bg-sky-100 transition-all cursor-pointer group hover:-translate-y-1">
               <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:shadow-md transition-all">
                 <Building2 className="text-secondary group-hover:scale-110 transition-transform" size={32} />
               </div>
               <h3 className="font-bold text-gray-900 text-lg">Soy Empresa</h3>
               <p className="text-sm text-gray-500 mt-2 font-medium">Busco talento local para mi negocio</p>
-            </a>
-            <a href={`${basePath}/capacitacion`} className="block text-center p-8 rounded-3xl bg-amber-50 hover:bg-amber-100 transition-all cursor-pointer group hover:-translate-y-1">
+            </Link>
+            <Link to="/capacitacion" className="block text-center p-8 rounded-3xl bg-amber-50 hover:bg-amber-100 transition-all cursor-pointer group hover:-translate-y-1">
               <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:shadow-md transition-all">
                 <GraduationCap className="text-accent group-hover:scale-110 transition-transform" size={32} />
               </div>
               <h3 className="font-bold text-gray-900 text-lg">Cursos Gratuitos</h3>
               <p className="text-sm text-gray-500 mt-2 font-medium">Especializate y mejorá tu perfil</p>
-            </a>
-            <a href={`${basePath}/perfil`} className="block text-center p-8 rounded-3xl bg-emerald-50 hover:bg-emerald-100 transition-all cursor-pointer group hover:-translate-y-1">
+            </Link>
+            <Link to="/perfil" className="block text-center p-8 rounded-3xl bg-emerald-50 hover:bg-emerald-100 transition-all cursor-pointer group hover:-translate-y-1">
               <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:shadow-md transition-all">
                 <Users className="text-emerald-500 group-hover:scale-110 transition-transform" size={32} />
               </div>
               <h3 className="font-bold text-gray-900 text-lg">Mi Perfil</h3>
               <p className="text-sm text-gray-500 mt-2 font-medium">Gestioná tus datos y postulaciones</p>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -152,9 +152,9 @@ const Home = () => {
             <div>
               <h4 className="font-bold mb-6 uppercase tracking-wider text-xs text-gray-500">Navegación</h4>
               <ul className="space-y-4 text-gray-400 font-medium">
-                <li><a href="/empleos" className="hover:text-primary-light transition-colors">Buscador de Empleo</a></li>
-                <li><a href="/capacitacion" className="hover:text-primary-light transition-colors">Cursos Gratuitos</a></li>
-                <li><a href="/empresas" className="hover:text-primary-light transition-colors">Portal Empresas</a></li>
+                <li><Link to="/empleos" className="hover:text-primary-light transition-colors">Buscador de Empleo</Link></li>
+                <li><Link to="/capacitacion" className="hover:text-primary-light transition-colors">Cursos Gratuitos</Link></li>
+                <li><Link to="/empresas" className="hover:text-primary-light transition-colors">Portal Empresas</Link></li>
               </ul>
             </div>
             <div>
