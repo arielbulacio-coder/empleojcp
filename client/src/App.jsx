@@ -167,7 +167,7 @@ const Home = () => {
             </div>
           </div>
           <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm font-medium">
-            <p>© 2024 Municipalidad de José C. Paz. Todos los derechos reservados.</p>
+            <p>© 2026 NexusCode. Todos los derechos reservados.</p>
             <div className="flex gap-8">
               <a href="#" className="hover:text-white transition-colors">Términos</a>
               <a href="#" className="hover:text-white transition-colors">Privacidad</a>
