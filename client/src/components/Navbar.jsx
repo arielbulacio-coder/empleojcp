@@ -1,4 +1,4 @@
-import { Menu, X, Briefcase, GraduationCap, User, LogIn, LogOut } from 'lucide-react';
+import { Menu, X, Briefcase, GraduationCap, User, LogIn, LogOut, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
@@ -35,6 +35,10 @@ const Navbar = () => {
                         <Link to="/capacitacion" className="text-gray-700 hover:text-primary font-medium transition-colors flex items-center gap-1">
                             <GraduationCap size={18} />
                             Capacitación
+                        </Link>
+                        <Link to="/crear-cv" className="text-gray-700 hover:text-primary font-medium transition-colors flex items-center gap-1">
+                            <FileText size={18} />
+                            Crear CV
                         </Link>
                         <div className="flex items-center space-x-4 ml-4">
                             {user ? (
@@ -79,6 +83,7 @@ const Navbar = () => {
                         <Link to="/empleos" className="block px-3 py-2 text-gray-700 hover:bg-primary/5 hover:text-primary rounded-md">Busco Trabajo</Link>
                         <Link to="/empresas" className="block px-3 py-2 text-gray-700 hover:bg-primary/5 hover:text-primary rounded-md">Empresas</Link>
                         <Link to="/capacitacion" className="block px-3 py-2 text-gray-700 hover:bg-primary/5 hover:text-primary rounded-md">Capacitación</Link>
+                        <Link to="/crear-cv" className="block px-3 py-2 text-gray-700 hover:bg-primary/5 hover:text-primary rounded-md">Crear CV</Link>
                         <div className="pt-4 border-t border-gray-100 flex flex-col space-y-2 px-3">
                             <Link to="/login" className="w-full text-center py-2 text-primary font-semibold">Ingresar</Link>
                             <Link to="/registro" className="w-full bg-primary text-white text-center py-3 rounded-xl font-semibold">Regístrate</Link>
