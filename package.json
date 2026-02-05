@@ -1,0 +1,14 @@
+{
+  "name": "empleojcp",
+  "version": "1.0.0",
+  "description": "Plataforma de Empleo José C. Paz",
+  "scripts": {
+    "dev:server": "cd server && npm start",
+    "dev:client": "cd client && npm run dev",
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "start": "concurrently \"npm run dev:server\" \"npm run dev:client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
