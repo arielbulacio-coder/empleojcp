@@ -20,13 +20,21 @@ const Navbar = () => {
         <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/80 backdrop-blur-md shadow-lg py-2' : 'bg-transparent py-4'}`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center">
-                    <Link to="/" className="flex items-center space-x-2">
-                        <div className={`p-2 rounded-lg ${scrolled ? 'bg-primary text-white' : 'bg-white text-primary'}`}>
-                            <Briefcase size={24} />
+                    <Link to="/" className="flex items-center gap-3 group">
+                        <img
+                            src="logo-municipalidad.png"
+                            alt="Logo JCP"
+                            className={`h-10 md:h-12 w-auto transition-all duration-300 ${scrolled ? 'brightness-100' : 'brightness-100'}`}
+                        />
+                        <div className="w-px h-8 bg-gray-200 hidden md:block"></div>
+                        <div className="flex flex-col leading-tight">
+                            <span className={`text-lg md:text-xl font-black tracking-tighter ${scrolled ? 'text-gray-900' : 'text-gray-900'}`}>
+                                José C. Paz <span className="text-primary font-bold">EMPLEO</span>
+                            </span>
+                            <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">
+                                Ciudad del Aprendizaje
+                            </span>
                         </div>
-                        <span className={`text-xl font-bold tracking-tight ${scrolled ? 'text-gray-900' : 'text-gray-900'}`}>
-                            Empleos <span className="text-primary">José C. Paz</span>
-                        </span>
                     </Link>
 
                     {/* Desktop Menu */}

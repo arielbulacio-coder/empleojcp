@@ -17,9 +17,19 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <span className="inline-block py-1 px-4 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-6">
-                        Oficina de Empleo Municipal
-                    </span>
+                    <div className="flex flex-col items-center mb-8">
+                        <motion.img
+                            initial={{ scale: 0.8, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            transition={{ delay: 0.2, type: "spring", stiffness: 100 }}
+                            src="logo-municipalidad.png"
+                            alt="Municipalidad de José C. Paz"
+                            className="h-24 md:h-32 mb-6 drop-shadow-xl"
+                        />
+                        <span className="inline-block py-1.5 px-6 rounded-full bg-primary/10 text-primary font-bold text-xs uppercase tracking-widest border border-primary/20">
+                            Oficina de Empleo Municipal
+                        </span>
+                    </div>
                     <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 mb-6 leading-tight">
                         Uniendo puentes en el <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
