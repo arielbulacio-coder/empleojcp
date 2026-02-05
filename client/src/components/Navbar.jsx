@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import { Menu, X, Briefcase, GraduationCap, User, LogIn, LogOut, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
