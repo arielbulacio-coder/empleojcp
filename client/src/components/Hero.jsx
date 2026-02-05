@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
     return (
-        <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
+        <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white pt-32 md:pt-40 pb-20">
             {/* Background decoration */}
             <div className="absolute top-0 left-0 w-full h-full">
                 <div className="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-primary/20 rounded-full blur-3xl opacity-50"></div>
